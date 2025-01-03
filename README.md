@@ -1,37 +1,40 @@
 # For creating react project:
 npx create-react-app app-name
+<br >
 npm i --web-vitals --save-dev
 
-# Install  Material UI link:
+## Install  Material UI link:
 npm install @mui/material @emotion/react @emotion/styled
 
 
-# Install Yup
+## Install Yup
 npm i yup
 
-# Routes
+## Routes
 
 npm i react-router
 
 
-# Changes in index.js file
+## Changes in index.js file
 
 <BrowserRouter>
     <App />
 </BrowserRouter>
 
-# Define Routes & Route in the main file
+## Define Routes & Route in the main file
 
 <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
 </Routes>
 
-# to create build
+## to create build
 npm run build
 
-# To Login Netlify
+## To Login Netlify
 netlify login
 
-# To Deploy On Netlify
-netlify deploy --prod# react-Signup-Form
+## To Deploy On Netlify
+netlify deploy --prod
+
+# react-Signup-Form
