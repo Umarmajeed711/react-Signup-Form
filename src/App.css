@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.body1{
+  background-image: url('./assets/hacker2.gif');
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.body2{
+  background-image: url('./assets/lock.gif');
+  background-position: top;
+  height: 100vh;
+  overflow: hidden;
+  /* color: white; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body3{
+  background-image: url('./assets/access.gif');
+  background-size: cover;
+  background-position: top;
+  height: 100vh;
+  overflow: hidden;
 }
+
+
+header{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+}
+
+.nav{
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  column-gap: 20px;    
+  
+}
+
+.nav li{
+  list-style: none;
+ 
+}
+
+.nav li a{
+  text-decoration: none;
+  color: white;
+  transition: all .3s;
+  padding: 3px 5px;
+  border-radius: 5px;
+  
+}
+.nav li a:hover  , .nav li a:active{
+  color: rgb(15, 211, 15) !important;
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+ 
+  border:none;
+}
+
+
+
+.back{
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.8);
+  border: 1px solid black;
+}
+
+.input{
+  backdrop-filter: blur(5px) !important;
+  background-color: transparent  !important;
+  border: 1px solid black ;
+  border-radius: 5px !important;
+  /* color: white; */
+}
+.input:hover ,.input:active{
+  box-shadow: 0 0 5px rgba(255,255,255,0.8);
+}
+
+.button{
+  background-color: black;
+  color: white;
+  transition: all .3s;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover , .button:active{
+  color: rgb(15, 211, 15) !important;
+  box-shadow: 0 0 10px  rgba(255,255,255,0.8); ;
+}
+
+.button2{
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 5px rgba(255,255,255,0.8);
+  padding: 5px ;
+  transition: all .3s;
+  border-radius: 5px;
+}
+
+.button2:hover , .button2:active{
+  color: rgb(15, 211, 15) !important;
+  box-shadow: 0 0 10px rgb(15, 211, 15) ;
+}
+.go{
+font-size: 50px;
+font-weight: 600;
+color: white;
+
+}
+
